@@ -4,7 +4,7 @@
         "link": "https://dwnd.softnet.su/files/windows-10/Windows10_64bit.iso",
         "logo": "logos/win10.png",
         "full_banner": "banners/win10_banner.png",
-        "description": "Windows 10 — операционная система от Microsoft, выпущенная в 2015 году, которая стала «золотой серединой» между классическим управлением и современными технологиями. Она объединила лучшее от Windows 7 и инновации Windows 8.",
+        "description": "Windows 10, Microsoft's operating system released in 2015, strikes a balance between classic desktop management and modern technology. It combines the best of Windows 7 with the innovations of Windows 8.",
         "versions": [
             {"label": "Media Creation Tool", "link": "https://dwnd.softnet.su/files/windows-10/MediaCreationTool22H2.exe"},
             {"label": "Windows 10 Pro x64 bit", "link": "https://dwnd.softnet.su/files/windows-10/Windows10_64bit.iso"},
@@ -27,7 +27,7 @@
         "link": "https://dwnd.softnet.su/files/windows-11/Windows11_64bit.iso",
         "logo": "logos/win11.png",
         "full_banner": "banners/win11_banner.png",
-        "description": "Windows 11 — это самая актуальная версия операционной системы от Microsoft, выпущенная в конце 2021 года. Она построена на базе Windows 10, но с полным переосмыслением визуального стиля и акцентом на упрощение интерфейса.",
+        "description": "Windows 11 is the latest version of Microsoft's operating system, released in late 2021. It builds on Windows 10, but features a completely redesigned visual style and a focus on simplifying the interface.",
         "versions": [
             {"label": "Media Creation Tool", "link": "https://dwnd.softnet.su/files/windows-11/mediacreationtool_windows_11_24h12.exe"},
             {"label": "Installation Assistant", "link": "https://dwnd.softnet.su/files/windows-11/Windows11InstallationAssistant.exe"},
@@ -52,7 +52,7 @@
         "link": "https://dwnd.softnet.su/files/windows-8/ru_windows_8.1_professional_vl_with_update_x64_dvd.iso",
         "logo": "logos/win8.png",
         "full_banner": "banners/win8_banner.png",
-        "description": "Windows 8 (и её последующее обновление 8.1) — это самая смелая и спорная попытка Microsoft переосмыслить компьютерный интерфейс, выпущенная в 2012 году. Система была разработана с прицелом на сенсорные экраны и планшеты, что кардинально изменило привычный опыт работы.",
+        "description": "Windows 8 (and its subsequent update, 8.1) is Microsoft's boldest and most controversial attempt to reimagine the computer interface, released in 2012. Designed with touchscreens and tablets in mind, it fundamentally changed the way people used to work.",
         "versions": [
             {"label": "Windows 8.1 Pro", "link": "https://dwnd.softnet.su/files/windows-8/ru_windows_8.1_professional_vl_with_update_x64_dvd.iso"}
         ]
@@ -64,7 +64,7 @@
         "link": "https://softnet.su/download/microsoft-windows/windows-7/windows-7-ultimate",
         "logo": "logos/win7.png",
         "full_banner": "banners/win7_banner.png",
-        "description": "Windows 7 — это одна из самых успешных и любимых пользователями операционных систем от Microsoft, выпущенная в 2009 году. Она пришла на смену Windows Vista, исправив её основные недостатки и предложив эталонный баланс между производительностью и визуальным стилем.",
+        "description": "Windows 7 is one of Microsoft's most successful and beloved operating systems, released in 2009. It replaced Windows Vista, correcting its main shortcomings and offering a benchmark balance between performance and visual style.",
         "versions": [
             {"label": "Windows 7 Ultimate", "link": "https://softnet.su/download/microsoft-windows/windows-7/windows-7-ultimate"},
             {"label": "Windows 7 Home Premium", "link": "https://softnet.su/download/microsoft-windows/windows-7/windows-7-home-premium"},
