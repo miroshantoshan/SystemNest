@@ -11,7 +11,6 @@ window = ctk.CTk()
 window.title("SystemNest")
 window.geometry("400x550")
 window.resizable(False, False)
-window.iconbitmap("images/logo.ico")
 
 all_buttons = []
 
@@ -21,7 +20,57 @@ def load_distros():
             return json.load(f)
     return []
 
-distro_data = load_distros() 
+distro_data = load_distros()
+
+def open_details(item):
+    """Создает отдельное окно с детальной информацией о дистрибутиве."""
+    details_window = ctk.CTkToplevel(window)
+    details_window.title(item.get("name", "Details"))
+    details_window.geometry("350x500")
+    details_window.attributes("-topmost", True)  # Окно поверх основного
+    
+    # 1. Баннер/Лого сверху
+    banner_path = item.get("full_banner", item.get("logo", ""))
+    if banner_path and os.path.exists(banner_path):
+        img = Image.open(banner_path)
+        # Масштабируем картинку под ширину окна
+        banner_img = ctk.CTkImage(light_image=img, dark_image=img, size=(300, 150))
+        banner_label = ctk.CTkLabel(details_window, image=banner_img, text="")
+        banner_label.pack(pady=10)
+
+    # 2. Название и описание
+    ctk.CTkLabel(details_window, text=item.get("name"), font=("Arial", 20, "bold")).pack()
+    
+    desc_text = item.get("description", "Описание отсутствует.")
+    desc_label = ctk.CTkLabel(details_window, text=desc_text, wraplength=300, font=("Arial", 12))
+    desc_label.pack(pady=10, padx=15)
+
+    # 3. Кнопка "Скачать основной"
+    main_btn = ctk.CTkButton(
+        details_window, 
+        text="Скачать дистрибутив", 
+        fg_color="#1f6aa5",
+        command=lambda: webbrowser.open(item.get("main_link", "#"))
+    )
+    main_btn.pack(pady=10)
+
+    # 4. Список версий (если есть)
+    versions = item.get("versions", [])
+    if versions:
+        ctk.CTkLabel(details_window, text="Другие версии:", font=("Arial", 10, "bold")).pack(pady=5)
+        v_frame = ctk.CTkScrollableFrame(details_window, height=120)
+        v_frame.pack(fill="x", padx=20, pady=5)
+        
+        for v in versions:
+            v_btn = ctk.CTkButton(
+                v_frame, 
+                text=v.get("label"), 
+                height=28,
+                fg_color="transparent",
+                border_width=1,
+                command=lambda l=v.get("link"): webbrowser.open(l)
+            )
+            v_btn.pack(fill="x", pady=2)
 
 def update_list(*args):
     for btn in all_buttons:
@@ -33,11 +82,9 @@ def update_list(*args):
 
     for item in distro_data:
         name = item.get("name", "???")
-        link = item.get("link", "#")
-        logo_path = item.get("logo", "") # Читаем путь из ключа "logo"
+        logo_path = item.get("logo", "")
 
         if search_text in name.lower():
-            # Загрузка иконки
             icon = None
             if logo_path and os.path.exists(logo_path):
                 try:
@@ -46,12 +93,13 @@ def update_list(*args):
                 except:
                     icon = None
 
+            # Теперь кнопка открывает окно с описанием, а не сразу ссылку
             new_btn = ctk.CTkButton(
                 scroll_frame,
                 text=name,
-                image=icon,         # Установка иконки
-                compound="left",    # Картинка слева от текста
-                command=lambda l=link: webbrowser.open(l),
+                image=icon,
+                compound="left",
+                command=lambda i=item: open_details(i), # Передаем весь объект данных
                 height=40,
                 fg_color="#2c3e50",
                 hover_color="#033ca5",
@@ -63,10 +111,7 @@ def update_list(*args):
 
     counter_label.configure(text=f"Found: {found_count}")
 
-def open_json():
-    if os.path.exists("distros.json"):
-        os.startfile("distros.json")
-
+# --- Интерфейс (без изменений) ---
 tabview = ctk.CTkTabview(window)
 tabview.pack(padx=10, pady=5, fill="both", expand=True)
 
@@ -76,12 +121,7 @@ tab_info = tabview.add("Info")
 search_var = ctk.StringVar()
 search_var.trace_add("write", update_list) 
 
-search_entry = ctk.CTkEntry(
-    tab_search, 
-    placeholder_text="Find a system...", 
-    textvariable=search_var,
-    height=35
-)
+search_entry = ctk.CTkEntry(tab_search, placeholder_text="Find a system...", textvariable=search_var, height=35)
 search_entry.pack(pady=5, padx=10, fill="x")
 
 counter_label = ctk.CTkLabel(tab_search, text="", font=("Arial", 10), text_color="gray")
@@ -92,10 +132,7 @@ scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 
 ctk.CTkLabel(tab_info, text="SystemNest", font=("Arial", 16, "bold")).pack(pady=10)
 ctk.CTkLabel(tab_info, text="Compact bible\n all of systems", font=("Arial", 12)).pack()
-ctk.CTkLabel(tab_info, text='''
-             
-Version: 0.10.0 Beta''', font=("Arial", 15)).pack()
+ctk.CTkLabel(tab_info, text="\nVersion: 0.10.0 Beta", font=("Arial", 15)).pack()
 
 update_list()
-
 window.mainloop()
