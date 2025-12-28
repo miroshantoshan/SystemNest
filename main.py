@@ -147,7 +147,7 @@ details_frame = ctk.CTkFrame(window, fg_color="transparent")
 tabview = ctk.CTkTabview(window)
 tabview.pack(padx=10, pady=5, fill="both", expand=True)
 
-tab_search = tabview.add("Search")
+tab_search = tabview.add("Linux")
 tab_windows = tabview.add("Windows")
 tab_installers = tabview.add("Установщик") # Новая вкладка
 tab_info = tabview.add("Info")
