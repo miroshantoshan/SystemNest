@@ -1,13 +1,25 @@
 [
     {
-        "name": "Windows 10 Pro",
-        "link": "https://...",
+        "name": "Windows 10",
+        "link": "https://dwnd.softnet.su/files/windows-10/Windows10_64bit.iso",
         "logo": "logos/win10.png",
         "full_banner": "logos/win10_bg.png",
         "description": "Классическая Windows 10 с поддержкой всех современных функций.",
         "versions": [
-            {"label": "22H2 ISO", "link": "https://..."},
-            {"label": "LTSC Version", "link": "https://..."}
+            {"label": "Media Creation Tool", "link": "https://dwnd.softnet.su/files/windows-10/MediaCreationTool22H2.exe"},
+            {"label": "Windows 10 Pro x64 bit", "link": "https://dwnd.softnet.su/files/windows-10/Windows10_64bit.iso"},
+            {"label": "Windows 10 Pro x32 bit", "link": "https://dwnd.softnet.su/files/windows-10/Windows10_32bit.iso"},
+            {"label": "Windows 10 Home x64 bit", "link": "https://dwnd.softnet.su/files/windows-10/Windows10_64bit.iso"},
+            {"label": "Windows 10 Home x32 bit", "link": "https://dwnd.softnet.su/files/windows-10/Windows10_32bit.iso"},
+            {"label": "Windows 10 Enterprise x64 bit", "link": "https://dwnd.softnet.su/files/windows-10/WINDOWS_10_ENTERPRISE_19045.2006.220908-0225.22h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso"},
+            {"label": "Windows 10 Enterprise x32 bit", "link": "https://dwnd.softnet.su/files/windows-10/WINDOWS_10_ENTERPRISE_19045.2006.220908-0225.22h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x86FRE_en-us.iso"},
+            {"label": "Windows 10 LTSC x64 bit 2021", "link": "https://dwnd.softnet.su/files/windows-10/ru-ru_windows_10_enterprise_ltsc_2021_x64.iso"},
+            {"label": "Windows 10 LTSC x32 bit 2021", "link": "https://dwnd.softnet.su/files/windows-10/ru-ru_windows_10_enterprise_ltsc_2021_x86.iso"},
+            {"label": "Windows 10 Education x64 bit", "link": "https://dwnd.softnet.su/files/windows-10/Windows10_64bit.iso"},
+            {"label": "Windows 10 Education x32 bit", "link": "https://dwnd.softnet.su/files/windows-10/Windows10_32bit.iso"}
+
         ]
+
+        
     }
 ]

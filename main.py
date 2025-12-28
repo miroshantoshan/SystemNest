@@ -54,7 +54,7 @@ def show_details(item):
     banner_path = item.get("full_banner", "")
     if banner_path and os.path.exists(banner_path):
         img = Image.open(banner_path)
-        banner_img = ctk.CTkImage(light_image=img, dark_image=img, size=(200, 200))
+        banner_img = ctk.CTkImage(light_image=img, dark_image=img)
         ctk.CTkLabel(details_frame, image=banner_img, text="").pack(pady=5)
 
     ctk.CTkLabel(details_frame, text=item.get("name"), font=("Arial", 22, "bold")).pack()

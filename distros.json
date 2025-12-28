@@ -10,8 +10,15 @@
             {"label": "v23.10", "link": "https://example.com/23.10"}
         ]
     },
-    {"name": "Linux Mint(Cinnamon)", "link": "https://mirror.yandex.ru/linuxmint/testing/linuxmint-22.3-cinnamon-64bit-beta.iso","logo": "logos/mint.png"},
-    {"name": "Arch Linux", "link": "https://mirror.23m.com/archlinux/iso/2025.12.01/archlinux-2025.12.01-x86_64.iso","logo": "logos/arch.png"},
-    {"name": "Fedora", "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/43/Workstation/x86_64/iso/Fedora-Workstation-Live-43-1.6.x86_64.iso","logo": "logos/fedora.png"},
-    {"name": "Debian", "link": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.2.0-amd64-netinst.iso","logo": "logos/debian.png"}
+    {
+        "name": "Linux Mint",
+        "description": "Linux Mint — это один из самых популярных и дружелюбных дистрибутивов Linux, созданный на основе Ubuntu и Debian. Его главная цель — предоставить пользователю современную, элегантную и комфортную операционную систему, которая «просто работает» сразу после установки.",
+        "logo": "logos/ubuntu.png",
+        "full_banner": "banners/ubuntu_banner.png",
+        "main_link": "https://ubuntu.com/download",
+        "versions": [
+            {"label": "v24.04 LTS", "link": "https://example.com/24.04"},
+            {"label": "v23.10", "link": "https://example.com/23.10"}
+        ]
+    }
 ]
