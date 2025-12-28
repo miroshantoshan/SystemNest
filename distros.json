@@ -1,7 +1,7 @@
 [
     {"name": "Ubuntu", "link": "https://releases.ubuntu.com/24.04.3/ubuntu-24.04.3-desktop-amd64.iso"},
     {"name": "Linux Mint(Cinnamon)", "link": "https://mirror.yandex.ru/linuxmint/testing/linuxmint-22.3-cinnamon-64bit-beta.iso"},
-    {"name": "Arch Linux", "link": "https://mirror.23m.com/archlinux/iso/2025.12.01/archlinux-2025.12.01-x86_64.iso"},
+    {"name": "Arch Linux", "link": "https://mirror.23m.com/archlinux/iso/2025.12.01/archlinux-2025.12.01-x86_64.iso","logo": "logos/arch.png"},
     {"name": "Fedora", "link": "https://download.fedoraproject.org/pub/fedora/linux/releases/43/Workstation/x86_64/iso/Fedora-Workstation-Live-43-1.6.x86_64.iso"},
     {"name": "Debian", "link": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.2.0-amd64-netinst.iso"}
 ]
