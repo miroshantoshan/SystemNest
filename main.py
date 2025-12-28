@@ -31,8 +31,8 @@ def load_windows():
     return []
 
 def load_installers():
-    if os.path.exists("downloader.json"):
-        with open("downloader.json", "r", encoding="utf-8") as f:
+    if os.path.exists("downloaders.json"):
+        with open("downloaders.json", "r", encoding="utf-8") as f:
             return json.load(f)
     return []
 
