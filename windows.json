@@ -47,6 +47,18 @@
 
         
     },
+    {
+        "name": "Windows 8",
+        "link": "https://softnet.su/download/microsoft-windows/windows-7/windows-7-ultimate",
+        "logo": "logos/win8.png",
+        "full_banner": "banners/win8_banner.png",
+        "description": "Windows 8 (и её последующее обновление 8.1) — это самая смелая и спорная попытка Microsoft переосмыслить компьютерный интерфейс, выпущенная в 2012 году. Система была разработана с прицелом на сенсорные экраны и планшеты, что кардинально изменило привычный опыт работы.",
+        "versions": [
+            {"label": "Windows 8.1 Pro", "link": "https://dwnd.softnet.su/files/windows-8/ru_windows_8.1_professional_vl_with_update_x64_dvd.iso"}
+        ]
+
+        
+    },
         {
         "name": "Windows 7",
         "link": "https://softnet.su/download/microsoft-windows/windows-7/windows-7-ultimate",
