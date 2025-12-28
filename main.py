@@ -14,6 +14,9 @@ window.resizable(False, False)
 
 all_buttons = []
 windows_buttons = []
+installer_buttons = [] # Список для кнопок установщика
+
+# --- Функции загрузки данных ---
 
 def load_distros():
     if os.path.exists("distros.json"):
@@ -27,8 +30,15 @@ def load_windows():
             return json.load(f)
     return []
 
+def load_installers():
+    if os.path.exists("downloader.json"):
+        with open("downloader.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
 distro_data = load_distros()
 windows_data = load_windows()
+installer_data = load_installers()
 
 # --- Логика переключения экранов ---
 
@@ -52,7 +62,7 @@ def show_details(item):
     desc_text = item.get("description", "Описание скоро появится...")
     ctk.CTkLabel(details_frame, text=desc_text, wraplength=350, font=("Arial", 13)).pack(pady=15, padx=20)
 
-    ctk.CTkButton(details_frame, text="Скачать систему", height=40, font=("Arial", 14, "bold"),
+    ctk.CTkButton(details_frame, text="Скачать", height=40, font=("Arial", 14, "bold"),
                   command=lambda: webbrowser.open(item.get("link", "#"))).pack(pady=10)
 
     versions = item.get("versions", [])
@@ -72,18 +82,8 @@ def hide_details():
     details_frame.pack_forget()
     tabview.pack(padx=10, pady=5, fill="both", expand=True)
 
-# --- Основной интерфейс ---
+# --- Логика обновления списков ---
 
-details_frame = ctk.CTkFrame(window, fg_color="transparent")
-
-tabview = ctk.CTkTabview(window)
-tabview.pack(padx=10, pady=5, fill="both", expand=True)
-
-tab_search = tabview.add("Search")
-tab_windows = tabview.add("Windows")
-tab_info = tabview.add("Info")
-
-# Логика для вкладки Search (Linux/Общее)
 def update_list(*args):
     for btn in all_buttons:
         btn.destroy()
@@ -104,7 +104,6 @@ def update_list(*args):
             new_btn.pack(fill="x", pady=2, padx=5)
             all_buttons.append(new_btn)
 
-# Логика для вкладки Windows
 def update_windows_list():
     for btn in windows_buttons:
         btn.destroy()
@@ -123,6 +122,36 @@ def update_windows_list():
         new_btn.pack(fill="x", pady=2, padx=5)
         windows_buttons.append(new_btn)
 
+def update_installer_list():
+    for btn in installer_buttons:
+        btn.destroy()
+    installer_buttons.clear()
+    for item in installer_data:
+        logo_path = item.get("logo", "")
+        icon = None
+        if logo_path and os.path.exists(logo_path):
+            try:
+                img = Image.open(logo_path)
+                icon = ctk.CTkImage(light_image=img, dark_image=img, size=(24, 24))
+            except: icon = None
+        new_btn = ctk.CTkButton(installer_scroll_frame, text=item.get("name"), image=icon, compound="left",
+                                command=lambda i=item: show_details(i), height=40,
+                                fg_color="#2c3e50", hover_color="#033ca5", anchor="w")
+        new_btn.pack(fill="x", pady=2, padx=5)
+        installer_buttons.append(new_btn)
+
+# --- Основной интерфейс ---
+
+details_frame = ctk.CTkFrame(window, fg_color="transparent")
+
+tabview = ctk.CTkTabview(window)
+tabview.pack(padx=10, pady=5, fill="both", expand=True)
+
+tab_search = tabview.add("Search")
+tab_windows = tabview.add("Windows")
+tab_installers = tabview.add("Установщик") # Новая вкладка
+tab_info = tabview.add("Info")
+
 # Наполнение вкладки Search
 search_var = ctk.StringVar()
 search_var.trace_add("write", update_list) 
@@ -135,6 +164,10 @@ scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 windows_scroll_frame = ctk.CTkScrollableFrame(tab_windows, label_text="Windows Versions")
 windows_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 
+# Наполнение вкладки Установщик
+installer_scroll_frame = ctk.CTkScrollableFrame(tab_installers, label_text="Available Installers")
+installer_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
+
 # Вкладка Info
 ctk.CTkLabel(tab_info, text="SystemNest", font=("Arial", 16, "bold")).pack(pady=10)
 ctk.CTkLabel(tab_info, text="Compact bible\n all of systems", font=("Arial", 12)).pack()
@@ -143,5 +176,6 @@ ctk.CTkLabel(tab_info, text="\nVersion: 0.20.0 Beta", font=("Arial", 15)).pack()
 # Первичная загрузка
 update_list()
 update_windows_list()
+update_installer_list()
 
 window.mainloop()

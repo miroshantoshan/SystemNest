@@ -1,0 +1,39 @@
+[{
+    "name": "Rufus",
+    "logo": "logos/rufus.png",
+    "full_banner": "banners/rufus_big.png",
+    "description": "Популярная утилита для создания загрузочных USB-накопителей. Идеально подходит для записи ISO-образов Windows и Linux.",
+    "link": "https://rufus.ie/",
+    "versions": [
+      {
+        "label": "Rufus Portable",
+        "link": "https://rufus.ie/downloads/"
+      },
+      {
+        "label": "Rufus (ARM64)",
+        "link": "https://rufus.ie/downloads/"
+      }
+    ]
+  },
+  {
+    "name": "Ventoy",
+    "logo": "logos/ventoy.png",
+    "full_banner": "banners/ventoy_big.png",
+    "description": "Инструмент с открытым исходным кодом для создания загрузочного USB-накопителя. Вам не нужно форматировать диск снова и снова, просто скопируйте ISO на флешку.",
+    "link": "https://www.ventoy.net/en/download.html",
+    "versions": [
+      {
+        "label": "Ventoy LiveCD",
+        "link": "https://www.ventoy.net/en/download.html"
+      }
+    ]
+  },
+  {
+    "name": "BalenaEtcher",
+    "logo": "logos/etcher.png",
+    "full_banner": "banners/etcher_big.png",
+    "description": "Простая и красивая программа для записи образов ОС на SD-карты и USB-накопители.",
+    "link": "https://www.balena.io/etcher/",
+    "versions": []
+  }
+]
