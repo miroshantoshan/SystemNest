@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Windows 10 Pro",
+        "link": "https://...",
+        "logo": "logos/win10.png",
+        "full_banner": "logos/win10_bg.png",
+        "description": "Классическая Windows 10 с поддержкой всех современных функций.",
+        "versions": [
+            {"label": "22H2 ISO", "link": "https://..."},
+            {"label": "LTSC Version", "link": "https://..."}
+        ]
+    }
+]
