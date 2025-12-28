@@ -81,7 +81,9 @@ details_frame = ctk.CTkFrame(window, fg_color="transparent")
 tabview = ctk.CTkTabview(window)
 tabview.pack(padx=10, pady=5, fill="both", expand=True)
 
+# Добавление вкладок
 tab_search = tabview.add("Search")
+tab_windows = tabview.add("Windows")  # Новая вкладка
 tab_info = tabview.add("Info")
 
 def update_list(*args):
@@ -109,7 +111,7 @@ def update_list(*args):
                 text=name,
                 image=icon,
                 compound="left",
-                command=lambda i=item: show_details(i), # Переход к деталям
+                command=lambda i=item: show_details(i),
                 height=40,
                 fg_color="#2c3e50",
                 hover_color="#033ca5",
@@ -121,7 +123,7 @@ def update_list(*args):
 
     counter_label.configure(text=f"Found: {found_count}")
 
-# Поле поиска
+# Вкладка Search
 search_var = ctk.StringVar()
 search_var.trace_add("write", update_list) 
 search_entry = ctk.CTkEntry(tab_search, placeholder_text="Поиск системы...", textvariable=search_var, height=35)
@@ -132,6 +134,9 @@ counter_label.pack()
 
 scroll_frame = ctk.CTkScrollableFrame(tab_search, label_text="Результаты")
 scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
+
+# Вкладка Windows (пустая, как вы и просили)
+ctk.CTkLabel(tab_windows, text="Раздел Windows", font=("Arial", 16, "bold")).pack(pady=20)
 
 # Вкладка Info
 ctk.CTkLabel(tab_info, text="SystemNest", font=("Arial", 16, "bold")).pack(pady=10)
