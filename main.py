@@ -54,7 +54,13 @@ def show_details(item):
     banner_path = item.get("full_banner", "")
     if banner_path and os.path.exists(banner_path):
         img = Image.open(banner_path)
-        banner_img = ctk.CTkImage(light_image=img, dark_image=img)
+        w, h = img.size
+        
+        # Рассчитываем высоту так, чтобы ширина всегда была 350 (под размер окна)
+        new_width = 250 
+        new_height = int(h * (new_width / w))
+        
+        banner_img = ctk.CTkImage(light_image=img, dark_image=img, size=(new_width, new_height))
         ctk.CTkLabel(details_frame, image=banner_img, text="").pack(pady=5)
 
     ctk.CTkLabel(details_frame, text=item.get("name"), font=("Arial", 22, "bold")).pack()

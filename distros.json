@@ -11,10 +11,10 @@
         ]
     },
     {
-        "name": "Linux Mint",
-        "description": "Linux Mint — это один из самых популярных и дружелюбных дистрибутивов Linux, созданный на основе Ubuntu и Debian. Его главная цель — предоставить пользователю современную, элегантную и комфортную операционную систему, которая «просто работает» сразу после установки.",
-        "logo": "logos/ubuntu.png",
-        "full_banner": "banners/ubuntu_banner.png",
+        "name": "Arch Linux",
+        "description": "Arch Linux — это независимый дистрибутив Linux, созданный для опытных пользователей, которые хотят полностью контролировать свою систему. Его главная философия — KISS (Keep It Simple, Stupid), что означает отсутствие лишних настроек «из коробки» и максимальную простоту внутренней структуры.",
+        "logo": "logos/arch.png",
+        "full_banner": "banners/arch_banner.png",
         "main_link": "https://ubuntu.com/download",
         "versions": [
             {"label": "v24.04 LTS", "link": "https://example.com/24.04"},
