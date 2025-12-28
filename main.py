@@ -136,7 +136,7 @@ scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 # Вкладка Info
 ctk.CTkLabel(tab_info, text="SystemNest", font=("Arial", 16, "bold")).pack(pady=10)
 ctk.CTkLabel(tab_info, text="Compact bible\n all of systems", font=("Arial", 12)).pack()
-ctk.CTkLabel(tab_info, text="\nVersion: 0.10.0 Beta", font=("Arial", 15)).pack()
+ctk.CTkLabel(tab_info, text="\nVersion: 0.20.0 Beta", font=("Arial", 15)).pack()
 
 update_list()
 window.mainloop()
