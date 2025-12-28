@@ -21,5 +21,30 @@
         ]
 
         
+    },
+    {
+        "name": "Windows 11",
+        "link": "https://dwnd.softnet.su/files/windows-11/Windows11_64bit.iso",
+        "logo": "logos/win10.png",
+        "full_banner": "logos/win10_bg.png",
+        "description": "Классическая Windows 10 с поддержкой всех современных функций.",
+        "versions": [
+            {"label": "Media Creation Tool", "link": "https://dwnd.softnet.su/files/windows-11/mediacreationtool_windows_11_24h12.exe"},
+            {"label": "Installation Assistant", "link": "https://dwnd.softnet.su/files/windows-11/Windows11InstallationAssistant.exe"},
+            {"label": "Windows 11 Pro 25H2", "link": "https://dwnd.softnet.su/files/windows-11/Windows_11_25H2_x64_ru.iso"},
+            {"label": "Windows 11 Pro 24H2", "link": "https://dwnd.softnet.su/files/windows-11/Windows11_24H2.iso"},
+            {"label": "Windows 11 Pro 22H2", "link": "https://dwnd.softnet.su/files/windows-11/Windows11.iso"},
+            {"label": "Windows 11 Home 25H2", "link": "https://dwnd.softnet.su/files/windows-11/Windows_11_25H2_x64_ru.iso"},
+            {"label": "Windows 11 Home 24H2", "link": "https://dwnd.softnet.su/files/windows-11/Windows11_24H2.iso"},
+            {"label": "Windows 11 Home 22H2", "link": "https://dwnd.softnet.su/files/windows-11/Windows11.iso"},
+            {"label": "Windows 11 Enterprise", "link": "https://dwnd.softnet.su/files/windows-11/22631.2428.231001-0608.23H2_NI_RELEASE_SVC_REFRESH_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso"},
+            {"label": "Windows 11 LTSC x64", "link": "https://dwnd.softnet.su/files/uploads/windows-11/26100.1742.240906-0331.ge_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso"},
+            {"label": "Windows 11 LTSC ARM64", "link": "https://dwnd.softnet.su/files/uploads/windows-11/26100.1.240331-1435.ge_release_CLIENTENTERPRISEEVAL_OEMRET_A64FRE_en-us.iso"},
+            {"label": "Windows 11 Education 24H2", "link": "https://dwnd.softnet.su/files/windows-11/Windows11_24H2.iso"},
+            {"label": "Windows 11 Education 23H2", "link": "https://dwnd.softnet.su/files/windows-11/Windows11.iso"}
+
+        ]
+
+        
     }
 ]
