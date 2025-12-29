@@ -173,12 +173,12 @@ windows_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 installer_scroll_frame = ctk.CTkScrollableFrame(tab_installers, label_text="Available Installers")
 installer_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 
-# Вкладка Info
+
 ctk.CTkLabel(tab_info, text="SystemNest", font=("Arial", 16, "bold")).pack(pady=10)
 ctk.CTkLabel(tab_info, text="Compact bible\n all of systems", font=("Arial", 12)).pack()
 ctk.CTkLabel(tab_info, text="\nVersion: 1.10.0", font=("Arial", 15)).pack()
 
-# Первичная загрузка
+
 update_list()
 update_windows_list()
 update_installer_list()
