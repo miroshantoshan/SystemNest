@@ -26,15 +26,23 @@
   {
     "name": "Ventoy",
     "logo": "logos/ventoy.png",
-    "full_banner": "banners/ventoy_big.png",
-    "description": "Инструмент с открытым исходным кодом для создания загрузочного USB-накопителя. Вам не нужно форматировать диск снова и снова, просто скопируйте ISO на флешку.",
+    "full_banner": "banners/ventoy_banner.png",
+    "description": "Инструмент с открытым исходным кодом для создания загрузочного USB-накопителя. Вам не нужно форматировать диск снова и снова, просто скопируйте ISO на флешку. Можно записать сразу несколько ISO",
     "link": "https://www.ventoy.net/en/download.html",
     "versions": [
       {
-        "label": "Ventoy LiveCD",
-        "link": "https://www.ventoy.net/en/download.html"
+        "label": "Ventoy Windows ZIP",
+        "link": "https://downloads.sourceforge.net/project/ventoy/v1.1.10/ventoy-1.1.10-windows.zip?ts=gAAAAABpUir_1YXtKgHCkCFwQCs9e3eAF7vibeGW6S1Ba2KxrvhwAn0Qvlhw27yEJWdpdbGaRhc8GrjZv5bt5elOkuv9wSvc-w%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fventoy%2Ffiles%2Flatest%2Fdownload"
+      },
+      {
+        "label": "Ventoy LiveCD.iso",
+        "link": "https://downloads.sourceforge.net/project/ventoy/v1.1.10/ventoy-1.1.10-livecd.iso?ts=gAAAAABpUiv3BNIvkwveHVINbAX3VVU_L2KUMpPrsKKqJDVKJX8krMxD9GsAPBB0zj3U3Rnu5DjKvGqNZSZu9h7ycXU6I47Wcg%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fventoy%2Ffiles%2Fv1.1.10%2Fventoy-1.1.10-livecd.iso%2Fdownload"
+      },
+      {
+        "label": "Ventoy Linux (.tar.gz)",
+        "link": "https://downloads.sourceforge.net/project/ventoy/v1.1.10/ventoy-1.1.10-linux.tar.gz?ts=gAAAAABpUivZY-z8Pj3VwTqk-QtmOGxSRmc8wyOqYyGuOqPsxyojLsRNh1vMblgLnGkEFoVt_S_Km48DktI03QAvz79LdSt3Sg%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fventoy%2Ffiles%2Fv1.1.10%2Fventoy-1.1.10-linux.tar.gz%2Fdownload"
       }
-    ]
+        ] 
   },
   {
     "name": "BalenaEtcher",
