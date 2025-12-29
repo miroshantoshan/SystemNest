@@ -64,7 +64,7 @@ def show_details(item):
 
     ctk.CTkLabel(details_frame, text=item.get("name"), font=("Arial", 22, "bold")).pack()
     
-    desc_text = item.get("description", "Описание скоро появится...")
+    desc_text = item.get("description", "Description were here soon...")
     ctk.CTkLabel(details_frame, text=desc_text, wraplength=350, font=("Arial", 13)).pack(pady=15, padx=20)
 
     ctk.CTkButton(details_frame, text="Скачать", height=40, font=("Arial", 14, "bold"),
