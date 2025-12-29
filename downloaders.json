@@ -1,17 +1,25 @@
 [{
     "name": "Rufus",
     "logo": "logos/rufus.png",
-    "full_banner": "banners/rufus_big.png",
+    "full_banner": "banners/rufus_banner.png",
     "description": "Популярная утилита для создания загрузочных USB-накопителей. Идеально подходит для записи ISO-образов Windows и Linux.",
-    "link": "https://rufus.ie/",
+    "link": "https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe",
     "versions": [
       {
-        "label": "Rufus Portable",
-        "link": "https://rufus.ie/downloads/"
+        "label": "Rufus x64 Standart",
+        "link": "https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11.exe"
       },
       {
         "label": "Rufus (ARM64)",
-        "link": "https://rufus.ie/downloads/"
+        "link": "https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_arm64.exe"
+      },
+      {
+        "label": "Rufus x86 Standart",
+        "link": "https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11_x86.exe"
+      },
+      {
+        "label": "Rufus x64 Portable",
+        "link": "https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11p.exe"
       }
     ]
   },
