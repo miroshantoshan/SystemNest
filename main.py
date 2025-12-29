@@ -14,9 +14,9 @@ window.resizable(False, False)
 
 all_buttons = []
 windows_buttons = []
-installer_buttons = [] # Список для кнопок установщика
+installer_buttons = [] 
 
-# --- Функции загрузки данных ---
+
 
 def load_distros():
     if os.path.exists("distros.json"):
@@ -40,7 +40,6 @@ distro_data = load_distros()
 windows_data = load_windows()
 installer_data = load_installers()
 
-# --- Логика переключения экранов ---
 
 def show_details(item):
     tabview.pack_forget()
@@ -56,7 +55,7 @@ def show_details(item):
         img = Image.open(banner_path)
         w, h = img.size
         
-        # Рассчитываем высоту так, чтобы ширина всегда была 350 (под размер окна)
+
         new_width = 250 
         new_height = int(h * (new_width / w))
         
@@ -88,7 +87,7 @@ def hide_details():
     details_frame.pack_forget()
     tabview.pack(padx=10, pady=5, fill="both", expand=True)
 
-# --- Логика обновления списков ---
+
 
 def update_list(*args):
     for btn in all_buttons:
@@ -146,7 +145,7 @@ def update_installer_list():
         new_btn.pack(fill="x", pady=2, padx=5)
         installer_buttons.append(new_btn)
 
-# --- Основной интерфейс ---
+
 
 details_frame = ctk.CTkFrame(window, fg_color="transparent")
 
@@ -155,22 +154,22 @@ tabview.pack(padx=10, pady=5, fill="both", expand=True)
 
 tab_search = tabview.add("Linux")
 tab_windows = tabview.add("Windows")
-tab_installers = tabview.add("Установщик") # Новая вкладка
+tab_installers = tabview.add("Downloaders") 
 tab_info = tabview.add("Info")
 
-# Наполнение вкладки Search
+
 search_var = ctk.StringVar()
 search_var.trace_add("write", update_list) 
 search_entry = ctk.CTkEntry(tab_search, placeholder_text="Поиск системы...", textvariable=search_var, height=35)
 search_entry.pack(pady=5, padx=10, fill="x")
-scroll_frame = ctk.CTkScrollableFrame(tab_search, label_text="Linux Distros")
+scroll_frame = ctk.CTkScrollableFrame(tab_search, label_text="Linux")
 scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 
-# Наполнение вкладки Windows
+
 windows_scroll_frame = ctk.CTkScrollableFrame(tab_windows, label_text="Windows Versions")
 windows_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 
-# Наполнение вкладки Установщик
+
 installer_scroll_frame = ctk.CTkScrollableFrame(tab_installers, label_text="Available Installers")
 installer_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 
