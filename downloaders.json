@@ -45,11 +45,30 @@
         ] 
   },
   {
-    "name": "BalenaEtcher",
-    "logo": "logos/etcher.png",
-    "full_banner": "banners/etcher_big.png",
+    "name": "balenaEtcher",
+    "logo": "logos/Etcher.png",
+    "full_banner": "banners/etcher_banner.png",
     "description": "Простая и красивая программа для записи образов ОС на SD-карты и USB-накопители.",
-    "link": "https://www.balena.io/etcher/",
-    "versions": []
+    "link": "",
+    "versions": [     {
+        "label": "Etcher Windows Setup",
+        "link": "https://github.com/balena-io/etcher/releases/download/v2.1.4/balenaEtcher-2.1.4.Setup.exe"
+      },
+      {
+        "label": "Etcher Windows Portable",
+        "link": "https://github.com/balena-io/etcher/releases/download/v2.1.4/balenaEtcher-win32-x64-2.1.4.zip"
+      },
+       {
+        "label": "Etcher Linux x64 (AppImage)",
+        "link": "https://github.com/balena-io/etcher/releases/download/v2.1.4/balenaEtcher-2.1.4-x64.AppImage"
+      },
+       {
+        "label": "Etcher Linux (.deb)",
+        "link": "https://github.com/balena-io/etcher#debian-and-ubuntu-based-package-repository-gnulinux-x86x64"
+      },
+       {
+        "label": "Etcher Linux (.rpm)",
+        "link": "https://github.com/balena-io/etcher#redhat-rhel-and-fedora-based-package-repository-gnulinux-x86x64"
+      }]
   }
 ]
