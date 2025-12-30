@@ -6,8 +6,9 @@
         "full_banner": "banners/ubuntu_banner.png",
         "main_link": "https://ubuntu.com/download",
         "versions": [
-            {"label": "v24.04 LTS", "link": "https://example.com/24.04"},
-            {"label": "v23.10", "link": "https://example.com/23.10"}
+            {"label": "Ubuntu 24.04.3 LTS", "link": "https://releases.ubuntu.com/24.04.3/ubuntu-24.04.3-desktop-amd64.iso?_gl=1*1awnbw0*_gcl_au*MTE0ODA5NTMxNC4xNzY3MTAzMTUy"},
+            {"label": "Ubuntu 25.10", "link": "https://releases.ubuntu.com/25.10/ubuntu-25.10-desktop-amd64.iso?_gl=1*1awnbw0*_gcl_au*MTE0ODA5NTMxNC4xNzY3MTAzMTUy"},
+            {"label": "Ubuntu 25.10 ARM64", "link": "https://cdimage.ubuntu.com/releases/25.10/release/ubuntu-25.10-desktop-arm64.iso?_gl=1*hw4ewv*_gcl_au*MTE0ODA5NTMxNC4xNzY3MTAzMTUy"}
         ]
     },
     {
@@ -15,10 +16,37 @@
         "description": "Arch Linux — это независимый дистрибутив Linux, созданный для опытных пользователей, которые хотят полностью контролировать свою систему. Его главная философия — KISS (Keep It Simple, Stupid), что означает отсутствие лишних настроек «из коробки» и максимальную простоту внутренней структуры.",
         "logo": "logos/arch.png",
         "full_banner": "banners/arch_banner.png",
-        "main_link": "https://ubuntu.com/download",
+        "main_link": "https://mirror.23m.com/archlinux/iso/2025.12.01/archlinux-2025.12.01-x86_64.iso",
         "versions": [
-            {"label": "v24.04 LTS", "link": "https://example.com/24.04"},
-            {"label": "v23.10", "link": "https://example.com/23.10"}
+            {"label": "Arch Linux x64 2025.12.01", "link": "https://mirror.23m.com/archlinux/iso/2025.12.01/archlinux-2025.12.01-x86_64.iso"}
+        ]
+    },
+    {
+        "name": "Debian",
+        "description": "Debian (Дебиан) — это одна из старейших, наиболее уважаемых и влиятельных операционных систем на базе ядра Linux (или FreeBSD). Она полностью состоит из свободного программного обеспечения и разрабатывается сообществом добровольцев со всего мира.",
+        "logo": "logos/debian.png",
+        "full_banner": "banners/debian_banner.png",
+        "main_link": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.2.0-amd64-netinst.iso",
+        "versions": [
+            {"label": "Debian 13.2.0", "link": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.2.0-amd64-netinst.iso"}
+        ]
+    },
+        {
+        "name": "Linux Mint",
+        "description": "Linux Mint — это один из самых популярных дистрибутивов Linux, созданный на базе Ubuntu (и частично Debian)",
+        "logo": "logos/mint.png",
+        "full_banner": "banners/mint_banner.png",
+        "main_link": "https://mirror.yandex.ru/linuxmint/testing/linuxmint-22.3-cinnamon-64bit-beta.iso",
+        "versions": [
+            {"label": "Mint 22.3 Cinnamon", "link": "https://mirror.yandex.ru/linuxmint/testing/linuxmint-22.3-cinnamon-64bit-beta.iso"},
+            {"label": "Mint 22.3 MATE", "link": "https://mirror.yandex.ru/linuxmint/testing/linuxmint-22.3-mate-64bit-beta.iso"},
+            {"label": "Mint 22.3 Xfce", "link": "https://mirror.yandex.ru/linuxmint/testing/linuxmint-22.3-xfce-64bit-beta.iso"},
+            {"label": "Mint 22.2 Cinnamon", "link": "https://mirror.yandex.ru/linuxmint/stable/22.2/linuxmint-22.2-cinnamon-64bit.iso"},
+            {"label": "Mint 22.2 MATE", "link": "https://mirror.yandex.ru/linuxmint/stable/22.2/linuxmint-22.2-mate-64bit.iso"},
+            {"label": "Mint 22.2 Xfce", "link": "https://mirror.yandex.ru/linuxmint/stable/22.2/linuxmint-22.2-xfce-64bit.iso"},
+            {"label": "Mint LMDE 7 Cinnamon", "link": "https://mirror.accum.se/mirror/linuxmint.com/iso/debian/lmde-7-cinnamon-64bit.iso"},
+            {"label": "Mint LMDE 6 Cinnamon", "link": "https://mirror.truenetwork.ru/linuxmint/debian/lmde-6-cinnamon-32bit.iso"}
+            
         ]
     }
 ]
