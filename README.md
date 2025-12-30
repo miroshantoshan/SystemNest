@@ -88,13 +88,13 @@ python main.py
 
 ## 🖼️ Галерея скриншотов
 
-![Screenshot](images/example1)
+![Screenshot](images/example1.png)
 
-![Screenshot](images/example2)
+![Screenshot](images/example2.png)
 
-![Screenshot](images/example3)
+![Screenshot](images/example3.png)
 
-![Screenshot](images/example4)
+![Screenshot](images/example4.png)
 
 ## ⚙️ Планы разработки
 
