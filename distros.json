@@ -48,5 +48,48 @@
             {"label": "Mint LMDE 6 Cinnamon", "link": "https://mirror.truenetwork.ru/linuxmint/debian/lmde-6-cinnamon-32bit.iso"}
             
         ]
+    },
+    {
+        "name": "Lubuntu",
+        "description": "Lubuntu is a complete Operating System that ships the essential apps and services for daily use: office applications, PDF reader,  image editor, music and video players, etc.",
+        "logo": "logos/lubuntu.png",
+        "full_banner": "banners/lubuntu_banner.png",
+        "main_link": "https://cdimage.ubuntu.com/lubuntu/releases/noble/release/lubuntu-24.04.3-desktop-amd64.iso",
+        "versions": [
+            {"label": "Lubuntu 24.04.3", "link": "https://cdimage.ubuntu.com/lubuntu/releases/noble/release/lubuntu-24.04.3-desktop-amd64.iso"},
+            {"label": "Lubuntu 25.10", "link": "https://cdimage.ubuntu.com/lubuntu/releases/questing/release/lubuntu-25.10-desktop-amd64.iso"}
+        ]
+    },
+    {
+        "name": "Kubuntu",
+        "description": "Kubuntu is an operating system that combines the power of Ubuntu together with the elegant KDE Plasma desktop. It is ready to use right away, with all the tools you need to work, create and play.",
+        "logo": "logos/kubuntu.png",
+        "full_banner": "banners/kubuntu_banner.png",
+        "main_link": "https://cdimage.ubuntu.com/kubuntu/releases/25.10/release/kubuntu-25.10-desktop-amd64.iso",
+        "versions": [
+            {"label": "Kubuntu 25.10 (Questing Quokka)", "link": "https://cdimage.ubuntu.com/kubuntu/releases/25.10/release/kubuntu-25.10-desktop-amd64.iso"},
+            {"label": "Kubuntu Desktop 24.04 LTS (Noble Numbat) ", "link": "https://cdimage.ubuntu.com/kubuntu/releases/24.04/release/kubuntu-24.04.3-desktop-amd64.iso"},
+            {"label": "Kubuntu 22.04.5 LTS (Jammy Jellyfish)", "link": "https://cdimage.ubuntu.com/kubuntu/releases/22.04.5/release/kubuntu-22.04.5-desktop-amd64.iso"},
+            {"label": "Kubuntu Desktop 20.04.6 LTS (Focal Fossa)", "link": "https://cdimage.ubuntu.com/kubuntu/releases/20.04.6/release/kubuntu-20.04.6-desktop-amd64.iso"}
+        ]
+    },
+        {
+        "name": "Xubuntu",
+        "description": "Xubuntu is a community developed,elegant and easy to use operating system",
+        "logo": "logos/xubuntu.png",
+        "full_banner": "banners/xubuntu_banner.png",
+        "main_link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/25.10/release/xubuntu-25.10-desktop-amd64.iso",
+        "versions": [
+            {"label": "Xubuntu 25.10 Desktop", "link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/25.10/release/xubuntu-25.10-desktop-amd64.iso"},
+            {"label": "Xubuntu 25.10 Minimal", "link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/25.10/release/xubuntu-25.10-minimal-amd64.iso"},
+            {"label": "Xubuntu 25.04 Desktop", "link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/25.04/release/xubuntu-25.04-desktop-amd64.iso"},
+            {"label": "Xubuntu 25.04 Minimal", "link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/25.04/release/xubuntu-25.04-minimal-amd64.iso"},
+            {"label": "Xubuntu 24.04 Desktop", "link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/24.04/release/xubuntu-24.04.3-desktop-amd64.iso"},
+            {"label": "Xubuntu 24.04 Minimal", "link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/24.04/release/xubuntu-24.04.3-minimal-amd64.iso"}
+        ]
     }
 ]
+
+
+
+
