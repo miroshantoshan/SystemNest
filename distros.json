@@ -87,6 +87,17 @@
             {"label": "Xubuntu 24.04 Desktop", "link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/24.04/release/xubuntu-24.04.3-desktop-amd64.iso"},
             {"label": "Xubuntu 24.04 Minimal", "link": "https://nl.archive.ubuntu.com/ubuntu-cdimage-xubuntu/releases/24.04/release/xubuntu-24.04.3-minimal-amd64.iso"}
         ]
+    },
+    {
+        "name": "Kali Linux",
+        "description": "Kali is a rolling Linux distribution, meaning as soon as we have an update, we ship it. Would-be users have a variety of images to choose from",
+        "logo": "logos/kali.png",
+        "full_banner": "banners/kali_banner.png",
+        "main_link": "https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-installer-amd64.iso",
+        "versions": [
+            {"label": "Kali Linux 2025.4 Changelog x64", "link": "https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-installer-amd64.iso"},
+            {"label": "Kali Linux 2025.4 Changelog ARM64", "link": "https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-installer-arm64.iso"}
+        ]
     }
 ]
 
