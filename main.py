@@ -72,7 +72,7 @@ def show_details(item):
 
     versions = item.get("versions", [])
     if versions:
-        ctk.CTkLabel(details_frame, text="Other versions:", font=("Arial", 11, "bold"), text_color="gray").pack(pady=5)
+        ctk.CTkLabel(details_frame, text="Other:", font=("Arial", 11, "bold"), text_color="gray").pack(pady=5)
         v_scroll = ctk.CTkScrollableFrame(details_frame, height=150)
         v_scroll.pack(fill="x", padx=30)
         
