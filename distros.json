@@ -98,6 +98,19 @@
             {"label": "Kali Linux 2025.4 Changelog x64", "link": "https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-installer-amd64.iso"},
             {"label": "Kali Linux 2025.4 Changelog ARM64", "link": "https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-installer-arm64.iso"}
         ]
+    },
+        {
+        "name": "NixOS",
+        "description": "Nix provides developers with a complete and consistent development environment. Stop worrying how to install dependencies for your project.",
+        "logo": "logos/nix.png",
+        "full_banner": "banners/nix_banner.png",
+        "main_link": "https://channels.nixos.org/nixos-25.11/latest-nixos-graphical-x86_64-linux.iso",
+        "versions": [
+            {"label": "NixOS Graphical 64bit Intel/AMD", "link": "https://channels.nixos.org/nixos-25.11/latest-nixos-graphical-x86_64-linux.iso"},
+            {"label": "NixOS Graphical 64bit ARM", "link": "https://channels.nixos.org/nixos-25.11/latest-nixos-graphical-aarch64-linux.iso"},            
+            {"label": "NixOS Minimal 64bit Intel/AMD", "link": "https://channels.nixos.org/nixos-25.11/latest-nixos-minimal-x86_64-linux.iso"},          
+            {"label": "NixOS Minimal 64bit ARM", "link": "https://channels.nixos.org/nixos-25.11/latest-nixos-minimal-aarch64-linux.iso"}
+        ]
     }
 ]
 
