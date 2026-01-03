@@ -18,6 +18,38 @@ installer_buttons = []
 
 
 
+def on_linux_scroll(event):
+    """
+    Обработчик для Linux. 
+    Button-4 — вверх, Button-5 — вниз.
+    """
+
+    widget = event.widget
+    target = None
+    
+    curr = widget
+    while curr:
+        if isinstance(curr, ctk.CTkScrollableFrame):
+            target = curr
+            break
+        try:
+            curr = curr.master
+        except:
+            curr = None
+            
+    if target:
+
+        if event.num == 4:
+            target._parent_canvas.yview_scroll(-1, "units")
+        elif event.num == 5:
+            target._parent_canvas.yview_scroll(1, "units")
+
+
+window.bind_all("<Button-4>", on_linux_scroll)
+window.bind_all("<Button-5>", on_linux_scroll)
+
+
+
 def load_distros():
     if os.path.exists("distros.json"):
         with open("distros.json", "r", encoding="utf-8") as f:
@@ -41,6 +73,7 @@ windows_data = load_windows()
 installer_data = load_installers()
 
 
+
 def show_details(item):
     tabview.pack_forget()
     for widget in details_frame.winfo_children():
@@ -52,19 +85,18 @@ def show_details(item):
 
     banner_path = item.get("full_banner", "")
     if banner_path and os.path.exists(banner_path):
-        img = Image.open(banner_path)
-        w, h = img.size
-        
-
-        new_width = 250 
-        new_height = int(h * (new_width / w))
-        
-        banner_img = ctk.CTkImage(light_image=img, dark_image=img, size=(new_width, new_height))
-        ctk.CTkLabel(details_frame, image=banner_img, text="").pack(pady=5)
+        try:
+            img = Image.open(banner_path)
+            w, h = img.size
+            new_width = 250 
+            new_height = int(h * (new_width / w))
+            banner_img = ctk.CTkImage(light_image=img, dark_image=img, size=(new_width, new_height))
+            ctk.CTkLabel(details_frame, image=banner_img, text="").pack(pady=5)
+        except: pass
 
     ctk.CTkLabel(details_frame, text=item.get("name"), font=("Arial", 22, "bold")).pack()
     
-    desc_text = item.get("description", "Description were here soon...")
+    desc_text = item.get("description", "Description will be here soon...")
     ctk.CTkLabel(details_frame, text=desc_text, wraplength=350, font=("Arial", 13)).pack(pady=15, padx=20)
 
     ctk.CTkButton(details_frame, text="Скачать", height=40, font=("Arial", 14, "bold"),
@@ -86,7 +118,6 @@ def show_details(item):
 def hide_details():
     details_frame.pack_forget()
     tabview.pack(padx=10, pady=5, fill="both", expand=True)
-
 
 
 def update_list(*args):
@@ -173,14 +204,9 @@ windows_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 installer_scroll_frame = ctk.CTkScrollableFrame(tab_installers, label_text="Available Installers")
 installer_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 
-
-ctk.CTkLabel(tab_info, text="SystemNest", font=("Arial", 16, "bold")).pack(pady=10)
-ctk.CTkLabel(tab_info, text="Compact bible\n all of systems", font=("Arial", 12)).pack()
-ctk.CTkLabel(tab_info, text="\nVersion: 1.10.4", font=("Arial", 15)).pack()
-
-
 update_list()
 update_windows_list()
 update_installer_list()
 
 window.mainloop()
+
