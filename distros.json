@@ -111,6 +111,17 @@
             {"label": "NixOS Minimal 64bit Intel/AMD", "link": "https://channels.nixos.org/nixos-25.11/latest-nixos-minimal-x86_64-linux.iso"},          
             {"label": "NixOS Minimal 64bit ARM", "link": "https://channels.nixos.org/nixos-25.11/latest-nixos-minimal-aarch64-linux.iso"}
         ]
+    },
+            {
+        "name": "ZorinOS",
+        "description": "Zorin OS is the alternative to Windows and macOS designed to make your computer faster, more powerful, secure, and privacy-respecting.",
+        "logo": "logos/zorin.png",
+        "full_banner": "banners/zorin_banner.png",
+        "main_link": "https://mirrors.edge.kernel.org/zorinos-isos/18/Zorin-OS-18-Core-64-bit-r2.iso",
+        "versions": [
+            {"label": "ZorinOS 18 Core", "link": "https://mirrors.edge.kernel.org/zorinos-isos/18/Zorin-OS-18-Core-64-bit-r2.iso"},
+            {"label": "ZorinOS 18 Education", "link": "https://mirrors.edge.kernel.org/zorinos-isos/18/Zorin-OS-18-Education-64-bit-r2.iso"}           
+        ]
     }
 ]
 
