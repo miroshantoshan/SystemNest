@@ -134,8 +134,21 @@
             {"label": "AuroraOS NvidiaOpen Stable", "link": "https://dl.getaurora.dev/aurora-nvidia-open-stable-webui-x86_64.iso"}
 
         ]
-    }
+    },
+            {
+        "name": "Pop!_OS",
+        "description": "Pop!_OS is a user-friendly Linux operating system from System76 (a Linux computer maker) based on Ubuntu, designed for creators, developers, and gamers",
+        "logo": "logos/pop.png",
+        "full_banner": "banners/pop_banner.png",
+        "main_link": "https://iso.pop-os.org/24.04/amd64/generic/22/pop-os_24.04_amd64_generic_22.iso",
+        "versions": [
+            {"label": "Pop!_OS 24.04 LTS", "link": "https://iso.pop-os.org/24.04/amd64/generic/22/pop-os_24.04_amd64_generic_22.iso"},
+            {"label": "Pop!_OS 24.04 LTS with NVIDIA", "link": "https://iso.pop-os.org/24.04/amd64/nvidia/22/pop-os_24.04_amd64_nvidia_22.iso"},
+            {"label": "Pop!_OS 24.04 LTS for ARM", "link": "https://iso.pop-os.org/24.04/arm64/generic/3/pop-os_24.04_arm64_generic_3.iso"},
+            {"label": "Pop!_OS 24.04 LTS for ARM with NVIDIA", "link": "https://iso.pop-os.org/24.04/arm64/nvidia/3/pop-os_24.04_arm64_nvidia_3.iso"}
 
+        ]
+    }
 ]
 
 

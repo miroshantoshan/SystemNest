@@ -209,4 +209,3 @@ update_windows_list()
 update_installer_list()
 
 window.mainloop()
-
