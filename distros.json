@@ -122,7 +122,20 @@
             {"label": "ZorinOS 18 Core", "link": "https://mirrors.edge.kernel.org/zorinos-isos/18/Zorin-OS-18-Core-64-bit-r2.iso"},
             {"label": "ZorinOS 18 Education", "link": "https://mirrors.edge.kernel.org/zorinos-isos/18/Zorin-OS-18-Education-64-bit-r2.iso"}           
         ]
+    },
+        {
+        "name": "AuroraOS",
+        "description": "Power on and feel right at home when using your computer, from the first moment on. No distractions or ads. Develop faster than ever before. Explore the galaxy. Write your next novel.",
+        "logo": "logos/aurora.png",
+        "full_banner": "banners/aurora_banner.png",
+        "main_link": "https://dl.getaurora.dev/aurora-stable-webui-x86_64.iso",
+        "versions": [
+            {"label": "AuroraOS Stable", "link": "https://dl.getaurora.dev/aurora-stable-webui-x86_64.iso"},
+            {"label": "AuroraOS NvidiaOpen Stable", "link": "https://dl.getaurora.dev/aurora-nvidia-open-stable-webui-x86_64.iso"}
+
+        ]
     }
+
 ]
 
 
