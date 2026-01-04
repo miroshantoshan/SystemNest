@@ -1,3 +1,4 @@
 .venv
 to_venv.txt
 test_ui.py
+config.json
