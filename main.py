@@ -204,6 +204,43 @@ windows_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 installer_scroll_frame = ctk.CTkScrollableFrame(tab_installers, label_text="Available Installers")
 installer_scroll_frame.pack(pady=5, padx=5, fill="both", expand=True)
 
+
+info_frame = ctk.CTkScrollableFrame(tab_info, label_text="О приложении")
+info_frame.pack(pady=5, padx=5, fill="both", expand=True)
+
+ctk.CTkLabel(info_frame, text="SystemNest", font=("Arial", 20, "bold")).pack(pady=(5, 0))
+
+ctk.CTkLabel(
+    info_frame,
+    text=(
+        "Каталог установочных образов Linux, сборок Windows и загрузочных утилит. "
+        "Нажмите на систему, чтобы открыть детали и ссылки на загрузку."
+    ),
+    wraplength=340,
+    justify="left",
+).pack(pady=5, padx=5, anchor="w")
+
+ctk.CTkLabel(info_frame, text="Как пользоваться", font=("Arial", 14, "bold")).pack(pady=(10, 0), anchor="w")
+ctk.CTkLabel(
+    info_frame,
+    text=(
+        "• Вкладка Linux: используйте строку поиска, чтобы отфильтровать дистрибутивы.\n"
+        "• Вкладки Windows и Downloaders: листайте список и открывайте нужный пункт.\n"
+        "• В деталях есть кнопка «Скачать» и список дополнительных версий (если есть).\n"
+        "• Чтобы вернуться к списку, нажмите «← Назад»."
+    ),
+    wraplength=340,
+    justify="left",
+).pack(pady=5, padx=5, anchor="w")
+
+ctk.CTkLabel(info_frame, text="Данные загружаются из:", font=("Arial", 14, "bold")).pack(pady=(10, 0), anchor="w")
+ctk.CTkLabel(
+    info_frame,
+    text="distros.json (Linux), windows.json (Windows), downloaders.json (утилиты). Обновите файлы и перезапустите приложение, чтобы применить изменения.",
+    wraplength=340,
+    justify="left",
+).pack(pady=5, padx=5, anchor="w")
+
 update_list()
 update_windows_list()
 update_installer_list()
