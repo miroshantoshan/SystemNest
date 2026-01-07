@@ -1,93 +1,91 @@
 # 🛡️ SystemNest
 
-**SystemNest** — это современное десктопное приложение, представляющее собой "компактную библию" операционных систем и полезного ПО. Это удобный навигатор по миру дистрибутивов Linux, версий Windows и необходимых загрузчиков, созданный для тех, кто ценит скорость и порядок.
-
-
+**SystemNest** is a modern desktop application—a compact "bible" of operating systems and useful software. It is a convenient navigator through the world of Linux distributions, Windows versions, and essential downloaders, built for those who value speed and order.
 
 ---
 
-## 📖 Содержание
-1. [Обзор](#обзор)
-2. [Ключевые особенности](#ключевые-особенности)
-3. [Технологический стек](#технологический-стек)
-4. [Структура проекта](#структура-проекта)
-5. [Установка и запуск](#установка-и-запуск)
-6. [Галерея скриншотов](#галерея-скриншотов)
-7. [Планы разработки](#планы-разработки)
+## 📖 Table of Contents
+1. [Overview](#overview)
+2. [Key Features](#key-features)
+3. [Tech Stack](#tech-stack)
+4. [Project Structure](#project-structure)
+5. [Installation and Run](#installation-and-run)
+6. [Screenshot Gallery](#screenshot-gallery)
+7. [Roadmap](#roadmap)
 
 ---
 
-## 🌟 Обзор
+## 🌟 Overview
 
-**SystemNest** решает проблему поиска чистых и актуальных образов ОС. Вместо того чтобы хранить сотни закладок в браузере, вы используете единый центр управления. Программа позволяет не только просматривать список доступных систем, но и изучать их описание, просматривать баннеры и скачивать нужную версию в один клик.
-
----
-
-## ✨ Ключевые особенности
-
-* **🗂️ Трехслойная архитектура:** Разделение контента на **Linux**, **Windows** и **Downloaders** (загрузчики).
-* **🔍 Живой поиск:** Мгновенная фильтрация дистрибутивов по названию прямо во время ввода.
-* **🖼️ Карточки деталей:** При клике на элемент приложение динамически перестраивает интерфейс, показывая:
-    * Полноразмерный баннер системы.
-    * Подробное текстовое описание.
-    * Кнопку быстрого скачивания.
-    * Список дополнительных редакций (например, разные версии ядра или оболочки).
-* **🎨 Современный UI:** Полностью темная тема, выполненная на базе `CustomTkinter` с плавными анимациями и адаптивными иконками.
-* **💾 JSON-Driven:** Весь контент программы управляется внешними файлами. Вы можете обновлять список систем, не прикасаясь к исходному коду.
+**SystemNest** solves the problem of finding clean, up-to-date OS images. Instead of keeping hundreds of bookmarks in a browser, you use a single control center. The app lets you not only view a list of available systems but also read their descriptions, view banners, and download the desired version in one click.
 
 ---
 
-## 🛠 Технологический стек
+## ✨ Key Features
 
-Проект написан на **Python 3.13.7** с использованием следующих библиотек:
-* `CustomTkinter` — высокоуровневый графический интерфейс.
-* `Pillow (PIL)` — глубокая обработка и масштабирование изображений.
-* `Webbrowser` — интеграция с системным браузером.
-* `JSON` — легкий формат хранения данных.
+* **🗂️ Three-layer architecture:** Content is separated into **Linux**, **Windows**, and **Downloaders**.
+* **🔍 Live search:** Instant filtering of distributions by name as you type.
+* **🖼️ Detail cards:** On click, the app dynamically restructures the UI to show:
+    * Full-size system banner.
+    * Detailed text description.
+    * Quick download button.
+    * List of additional editions (for example, different kernel or shell versions).
+* **🎨 Modern UI:** Fully dark theme built on `CustomTkinter` with smooth animations and adaptive icons.
+* **💾 JSON-Driven:** All app content is managed by external files. You can update the list of systems without touching the source code.
 
 ---
 
-## 📂 Структура проекта
+## 🛠 Tech Stack
+
+The project is written in **Python 3.13.7** using the following libraries:
+* `CustomTkinter` — high-level graphical interface.
+* `Pillow (PIL)` — advanced image processing and scaling.
+* `Webbrowser` — integration with the system browser.
+* `JSON` — lightweight data storage format.
+
+---
+
+## 📂 Project Structure
 
 ```text
 SystemNest/
-├── main.py              # Основной файл приложения
-├── distros.json         # База данных Linux дистрибутивов
-├── windows.json         # База данных версий Windows
-├── downloaders.json     # База данных софта/загрузчиков
+├── main.py              # Main application file
+├── distros.json         # Database of Linux distributions
+├── windows.json         # Database of Windows versions
+├── downloaders.json     # Database of software/downloaders
 ├── images/
-│   └──                  # Иконка программы
-└── logos/               # Папка с логотипами
+│   └──                  # App icon
+└── logos/               # Folder with logos
     └──  
-└── banners/             # Папка с баннерами
+└── banners/             # Folder with banners
     └──  
-├── README.MD            # Ознакомление
+├── README.MD            # Introduction
 ```
 
-## 🚀Установка и запуск
+## 🚀 Installation and Run
 
-Клонируйте репозиторий:
+Clone the repository:
 
 ```
 git clone [https://github.com/miroshantoshan/systemnest.git](https://github.com/your-username/systemnest.git)
 cd systemnest-main
 ```
 
-Установите зависимости:
+Install dependencies:
 
 ```
 pip install customtkinter pillow
 ```
 
-Запустите программу:
+Run the program:
 ```
 python main.py
 ```
 
-✅ Готово!
+✅ Done!
 
 
-## 🖼️ Галерея скриншотов
+## 🖼️ Screenshot Gallery
 
 ![Screenshot](images/example1.png)
 
@@ -97,6 +95,6 @@ python main.py
 
 ![Screenshot](images/example4.png)
 
-## ⚙️ Планы разработки
+## ⚙️ Roadmap
 
-С планами дальнейшего выпуска обновлений, бета-версий, детальных изменений и планов вы можете ознакомиться в наше [канале](https://t.me/systemnest)
+You can find plans for upcoming updates, beta releases, detailed changes, and roadmap items in our [channel](https://t.me/systemnest)
