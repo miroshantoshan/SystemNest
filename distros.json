@@ -154,14 +154,26 @@
         "description": "MX Linux is a cooperative venture between the antiX and MX Linux communities. It is a family of operating systems built by users from Debian Stable repositories that are designed to combine elegant and efficient desktops with high stability and solid performance. ",
         "logo": "logos/mxlinux.png",
         "full_banner": "banners/mxlinux_banner.png",
-        "main_link": "",
+        "main_link": "https://downloads.sourceforge.net/project/mx-linux/Final/KDE/MX-25_KDE_x64.iso?ts=gAAAAABpWm1zeZz0MheQpPYtMTz1CBZu7rNcdCbnE2uJiuLLCHhp-BUXbT3MNM0Aq7YQhLt63J1apxGlrEJ-nE76h_AMjpVKcQ%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmx-linux%2Ffiles%2FFinal%2FKDE%2FMX-25_KDE_x64.iso%2Fdownload",
         "versions": [
             {"label": "MX Linux 25 Xfce", "link": "https://downloads.sourceforge.net/project/mx-linux/Snapshots/MX-25_December_Xfce.iso?ts=gAAAAABpWmz71I6-kIMPoDmHXRb06lZ2Oyb4IOgc_59Y_HT_8OA-dxe5mDc2LvE8cWHazawATidL1eJDgZqIpJXo3pvvKR_7ew%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmx-linux%2Ffiles%2Flatest%2Fdownload"},
             {"label": "MX Linux 25 KDE", "link": "https://downloads.sourceforge.net/project/mx-linux/Final/KDE/MX-25_KDE_x64.iso?ts=gAAAAABpWm1zeZz0MheQpPYtMTz1CBZu7rNcdCbnE2uJiuLLCHhp-BUXbT3MNM0Aq7YQhLt63J1apxGlrEJ-nE76h_AMjpVKcQ%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmx-linux%2Ffiles%2FFinal%2FKDE%2FMX-25_KDE_x64.iso%2Fdownload"},
             {"label": "MX Linux 25 Fluxbox", "link": "https://downloads.sourceforge.net/project/mx-linux/Final/Fluxbox/MX-25_fluxbox_x64.iso?ts=gAAAAABpWm2zAHdR-YAY8J3jKMfXUZ5LXJV_pdAiQk6G9i1cxsJ82n5nOHznMAXeWngGBhxdvWrtTVAbx8Bgsv0qOe8qZSwsjw%3D%3D&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fmx-linux%2Ffiles%2FFinal%2FFluxbox%2FMX-25_fluxbox_x64.iso%2Fdownload"}
 
         ]
+    },
+                    {
+        "name": "Tails linux",
+        "description": "Tails is a portable operating system that protects against surveillance and censorship. ",
+        "logo": "logos/tails.png",
+        "full_banner": "banners/tails_banner.png",
+        "main_link": "https://download.tails.net/tails/stable/tails-amd64-7.4/tails-amd64-7.4.img",
+        "versions": [
+            {"label": "Tails 7.4 USB Image", "link": "https://download.tails.net/tails/stable/tails-amd64-7.4/tails-amd64-7.4.img"}
+
+        ]
     }
+    
     
 
 ]
